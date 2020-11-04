@@ -37,5 +37,8 @@ let package = Package(
             name: "Alamofire",
             path: "Source")
     ],
+    platforms: [
+   .macOS(.v10_13), .iOS(.v9),
+],
     swiftLanguageVersions: [.v4, .v5]
 )
