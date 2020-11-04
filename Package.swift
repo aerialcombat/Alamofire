@@ -27,6 +27,9 @@ import PackageDescription
 
 let package = Package(
     name: "Alamofire",
+    platforms: [
+        .macOS(.v10_13), .iOS(.v9)
+    ],
     products: [
         .library(
             name: "Alamofire",
@@ -36,9 +39,6 @@ let package = Package(
         .target(
             name: "Alamofire",
             path: "Source")
-    ],
-    platforms: [
-        .macOS(.v10_13), .iOS(.v9)
     ],
     swiftLanguageVersions: [.v4, .v5]
 )
